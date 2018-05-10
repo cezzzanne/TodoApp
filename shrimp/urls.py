@@ -15,7 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from votingsystem.views import home, login_home
+from django.contrib.auth.views import login, logout
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', home),
+    path('login', login),
+    path('account/logout', logout),
+    path('account/home', login_home),
 ]

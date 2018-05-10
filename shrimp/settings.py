@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'votingsystem',
 ]
 
 MIDDLEWARE = [
@@ -51,10 +52,14 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'shrimp.urls'
 
+LOGIN_REDIRECT_URL = 'account/home'
+
+LOGOUT_REDIRECT_URL = ''
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['/Users/pabloarellano/Desktop/shrimp/shrimp/votingsystem/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
