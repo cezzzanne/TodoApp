@@ -1,8 +1,9 @@
 from django import forms
-from .models import Profile
+from .models import ToDo
 from django.forms import ModelForm
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm, UserChangeForm
+from django.contrib.admin.widgets import AdminDateWidget
 
 
 class CreateProfileForm(UserCreationForm):
@@ -29,4 +30,12 @@ class EditProfileForm(UserChangeForm):
     class Meta:
         model = User
         fields = ('username', 'first_name', 'last_name', 'email', 'password')
+
+
+class AddToDoForm(ModelForm):
+
+    class Meta:
+        model = ToDo
+        fields = ('name', 'note')
+
 

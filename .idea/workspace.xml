@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bac99b85-8c51-44a4-a874-849bf74e82ee" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/votingsystem/static/votingsystem/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/votingsystem/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/votingsystem/templates/registration/edit_profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/votingsystem/templates/registration/login_home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/votingsystem/templates/registration/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/votingsystem/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shrimp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/shrimp/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shrimp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/shrimp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/votingsystem/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/votingsystem/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/votingsystem/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/votingsystem/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/votingsystem/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/votingsystem/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/votingsystem/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/votingsystem/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/votingsystem/templates/login_home.html" beforeDir="false" afterPath="$PROJECT_DIR$/votingsystem/templates/registration/edit_password.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/votingsystem/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/votingsystem/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/votingsystem/templates/registration/login_home.html" beforeDir="false" afterPath="$PROJECT_DIR$/votingsystem/templates/registration/login_home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/votingsystem/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/votingsystem/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,8 +20,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/votingsystem/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="330">
+              <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
               <folding>
                 <element signature="e#0#57#0" expanded="true" />
               </folding>
@@ -41,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit_password.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/votingsystem/templates/registration/edit_password.html">
+      <file leaf-file-name="login_home.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/votingsystem/templates/registration/login_home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+            <state relative-caret-position="360">
+              <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -53,34 +41,10 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/votingsystem/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="375">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/votingsystem/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="e#1#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shrimp/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-              <folding>
-                <element signature="e#630#662#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,8 +53,8 @@
       <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/votingsystem/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="70" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="70" />
+            <state relative-caret-position="255">
+              <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -122,20 +86,20 @@
         <option value="$PROJECT_DIR$/votingsystem/templates/base.html" />
         <option value="$PROJECT_DIR$/votingsystem/templates/registration/home.html" />
         <option value="$PROJECT_DIR$/votingsystem/templates/registration/login.html" />
-        <option value="$PROJECT_DIR$/votingsystem/models.py" />
         <option value="$PROJECT_DIR$/votingsystem/templates/home.html" />
         <option value="$PROJECT_DIR$/shrimp/urls.py" />
-        <option value="$PROJECT_DIR$/votingsystem/templates/registration/login_home.html" />
         <option value="$PROJECT_DIR$/votingsystem/templates/registration/edit_profile.html" />
-        <option value="$PROJECT_DIR$/votingsystem/forms.py" />
         <option value="$PROJECT_DIR$/votingsystem/templates/registration/edit_password.html" />
         <option value="$PROJECT_DIR$/votingsystem/urls.py" />
+        <option value="$PROJECT_DIR$/votingsystem/forms.py" />
         <option value="$PROJECT_DIR$/votingsystem/views.py" />
+        <option value="$PROJECT_DIR$/votingsystem/models.py" />
+        <option value="$PROJECT_DIR$/votingsystem/templates/registration/login_home.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="width" value="838" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1680" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -231,10 +195,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="925" height="1050" extended-state="6" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34702703" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19107144" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3296593" />
@@ -335,13 +299,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/votingsystem/templates/registration/login_home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/votingsystem/templates/registration/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -356,26 +313,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/votingsystem/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/votingsystem/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="70" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="70" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/votingsystem/templates/registration/edit_profile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -383,17 +320,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/votingsystem/templates/registration/edit_password.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/votingsystem/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="75">
+          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
           <folding>
             <element signature="e#1#38#0" expanded="true" />
           </folding>
@@ -402,18 +332,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/shrimp/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="330">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
           <folding>
             <element signature="e#630#662#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/votingsystem/templates/registration/edit_password.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="43" lean-forward="true" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/votingsystem/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/votingsystem/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/votingsystem/templates/registration/login_home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/votingsystem/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="330">
+          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
           <folding>
             <element signature="e#0#57#0" expanded="true" />
           </folding>

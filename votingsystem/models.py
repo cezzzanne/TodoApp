@@ -22,11 +22,8 @@ post_save.connect(create_profile, sender=User)
 class ToDo(models.Model):
     user = models.ForeignKey(Profile, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
-    date = models.DateTimeField(default=now, blank=True)
     note = models.CharField(max_length=700)
 
-    class Meta:
-        ordering = ['date']
 
 
 

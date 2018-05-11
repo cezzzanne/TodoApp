@@ -9,4 +9,17 @@
 {% block body %}
 <h1>Welcome home {{ user.first_name }}</h1>
 <a href="edit"> <p>Edit Profile here</p></a>
+
+  <h2>Add ToDo</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Add</button>
+    </form>
+
+<ul>
+    {% for todo in todos %}
+    <li> Name: {{ todo.name }} , Note: {{ todo.note }}</li>
+    {% endfor %}
+</ul>
 {% endblock %}
