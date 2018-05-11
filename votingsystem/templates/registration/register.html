@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Shrimp</title>
+{% endblock %}
+
+{% block body %}
+<h1> Register</h1>
+<form action='' method="post">
+    {% csrf_token %}
+    <table>
+        {{ form.as_table }}
+    </table>
+    <p><input type="submit">Register</p>
+</form>
+{% endblock %}
+

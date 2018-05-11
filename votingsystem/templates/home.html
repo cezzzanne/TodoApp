@@ -1,16 +1,13 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html lang="en">
-<head>
-    <title>Register</title>
-</head>
-<body>
-    <h1> Register</h1>
-    <form action='' method="post">
-        {% csrf_token %}
-        <table>
-            {{ form.as_table }}
-          </table>
-        <p><input type="submit">Register</p>
-    </form>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Welcome</title>
+{% endblock %}
+{% block body %}
+<div class="container">
+    <h1>Welcome!</h1>
+    <h3>Want to sign up?</h3>
+    <a href="/register/">Sign up</a>
+
+</div>
+{% endblock %}

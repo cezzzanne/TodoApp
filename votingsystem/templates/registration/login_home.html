@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}
+<title>Home</title>
+{% load static %}
+<link rel="stylesheet" href="{% static 'votingsystem/style.css' %}" type="text/css">
+{% endblock %}
+
+
+{% block body %}
+<h1>Welcome home {{ user.first_name }}</h1>
+<a href="edit"> <p>Edit Profile here</p></a>
+{% endblock %}

@@ -14,14 +14,15 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from votingsystem.views import home, login_home
+from django.urls import path, include
+from votingsystem.views import home, login_home, register
 from django.contrib.auth.views import login, logout
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home),
+    path('register/', register),
     path('login', login),
-    path('account/logout', logout),
-    path('account/home', login_home),
+    path('account/logout/', logout), ## TODO: ADD THIS LOGOUT HTML
+    path('account/', include('votingsystem.urls')),
 ]
