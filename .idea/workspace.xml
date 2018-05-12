@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bac99b85-8c51-44a4-a874-849bf74e82ee" name="Default" comment="" />
+    <list default="true" id="bac99b85-8c51-44a4-a874-849bf74e82ee" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/votingsystem/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/votingsystem/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/votingsystem/templates/registration/login_home.html" beforeDir="false" afterPath="$PROJECT_DIR$/votingsystem/templates/registration/login_home.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login_home.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="login_home.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/votingsystem/templates/registration/login_home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="150">
+              <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -44,7 +48,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/votingsystem/forms.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -52,6 +56,15 @@
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/votingsystem/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -77,7 +90,6 @@
         <option value="$PROJECT_DIR$/shrimp/settings.py" />
         <option value="$PROJECT_DIR$/votingsystem/admin.py" />
         <option value="$PROJECT_DIR$/votingsystem/templates/login_home.html" />
-        <option value="$PROJECT_DIR$/votingsystem/templates/base.html" />
         <option value="$PROJECT_DIR$/votingsystem/templates/registration/home.html" />
         <option value="$PROJECT_DIR$/votingsystem/templates/registration/login.html" />
         <option value="$PROJECT_DIR$/votingsystem/templates/home.html" />
@@ -87,8 +99,10 @@
         <option value="$PROJECT_DIR$/votingsystem/urls.py" />
         <option value="$PROJECT_DIR$/votingsystem/forms.py" />
         <option value="$PROJECT_DIR$/votingsystem/views.py" />
-        <option value="$PROJECT_DIR$/votingsystem/templates/registration/login_home.html" />
         <option value="$PROJECT_DIR$/votingsystem/models.py" />
+        <option value="$PROJECT_DIR$/votingsystem/templates/base.html" />
+        <option value="$PROJECT_DIR$/votingsystem/templates/registration/login_home.html" />
+        <option value="$PROJECT_DIR$/votingsystem/static/votingsystem/style.css" />
       </list>
     </option>
   </component>
@@ -269,16 +283,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/votingsystem/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/votingsystem/static/votingsystem/style.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/shrimp/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -351,13 +355,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/votingsystem/templates/registration/login_home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/votingsystem/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -375,6 +372,23 @@
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/votingsystem/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/votingsystem/static/votingsystem/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/votingsystem/templates/registration/login_home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
         </state>
       </provider>
     </entry>

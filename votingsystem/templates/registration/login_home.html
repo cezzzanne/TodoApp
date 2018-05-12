@@ -7,19 +7,29 @@
 
 
 {% block body %}
-<h1>Welcome home {{ user.first_name }}</h1>
-<a href="edit"> <p>Edit Profile here</p></a>
-
-  <h2>Add ToDo</h2>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Add</button>
-    </form>
-
-<ul>
-    {% for todo in todos %}
-    <li> Name: {{ todo.name }} , Note: {{ todo.note }}</li>
+<div class='container'>
+  <h1 id="welcome">Welcome home {{ user.first_name }}</h1>
+  <h2>Add Folder</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Add</button>
+  </form>
+  <ul>
+    {% for folder in folders %}
+    <h2> Folder <a href="add-todo/{{ folder }}">+</a> </h2>
+    <li>Name: {{ folder.name }} </li>
+    <ul>
+      {% for todo in folder.todo.all %}
+      <li>Name : {{ todo.name }} </li>
+      <li>Note : {{ todo.note }} </li>
+      {% endfor %}
+    </ul>
+    <li> Description: {{ folder.description }} </li>
     {% endfor %}
-</ul>
+  </ul>
+</div>
+
+
+
 {% endblock %}

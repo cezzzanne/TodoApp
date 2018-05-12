@@ -15,14 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from votingsystem.views import home, login_home, register
-from django.contrib.auth.views import login, logout
+from votingsystem.views import home, register
+from django.contrib.auth.views import login
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home),
     path('register/', register),
     path('login', login),
-    path('account/logout/', logout), ## TODO: ADD THIS LOGOUT HTML
-    path('account/', include('votingsystem.urls')),
+    path('account/', include('votingsystem.urls'))
+
 ]

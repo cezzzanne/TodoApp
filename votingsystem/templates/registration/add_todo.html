@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}
+<title>ToDo</title>
+{% endblock %}
+
+
+{% block body %}
+<div class='container'>
+  <h2>Add a Todo to this folder</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Add</button>
+  </form>
+
+  {% endblock %}
