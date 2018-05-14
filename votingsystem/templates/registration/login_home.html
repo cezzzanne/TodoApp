@@ -7,29 +7,49 @@
 
 
 {% block body %}
-<div class='container'>
-  <h1 id="welcome">Welcome home {{ user.first_name }}</h1>
-  <h2>Add Folder</h2>
+<!-- SEARCH BAR -->
+<div class='container-fluid'>
   <form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Add</button>
+      <div id="search" class="row">
+      <input class="col-sm" id="search-bar" type="text" placeholder="Search for Folders">
+    <button type="submit">Search</button>
+      </div>
   </form>
-  <ul>
-    {% for folder in folders %}
-    <h2> Folder <a href="add-todo/{{ folder }}">+</a> </h2>
-    <li>Name: {{ folder.name }} </li>
-    <ul>
-      {% for todo in folder.todo.all %}
-      <li>Name : {{ todo.name }} </li>
-      <li>Note : {{ todo.note }} </li>
-      {% endfor %}
-    </ul>
-    <li> Description: {{ folder.description }} </li>
-    {% endfor %}
-  </ul>
 </div>
 
 
 
+<div id="all-folders" class="container-fluid">
+  <div class="row">
+    {% for folder in folders %}
+    <div class="col-sm-4 individual-folder">
+      <h2> {{ folder.name }} ({{ folder.todo.all.count }}) <a href=""class="addtodo">+</a> </h2>
+  </div>
+    {% endfor %}
+    <div class="col-sm-4 individual-folder adding-folder"> <!-- MAKE THIS GO SOMEWHERE-->
+    <a href="" class="add-folder"> <h2>Add a Folder</h2></a>
+    </div>
+</div>
+</div>
+
+
+
+<div class="container folder-adder">
+  <h2>Add a Folder</h2>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button class="added-folder" type="submit">Add</button>
+</form>
+</div>
+
+<div class="blurring-provider folder-adder">
+</div>
+
+{% endblock %}
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+{% block content %}
+{% load staticfiles %}
+<link type="text/javascript" href="{% static 'votingsystem/login_home.js' %}"></link>
 {% endblock %}
