@@ -1,15 +1,16 @@
 $(document).ready(function () {
     'use strict';
-    //$('.folder-adder').hide();
-    $('#all-folders').fadeIn("slow");
+    $('.folder-adder').hide()
     //Adding Todo Functionality
-    $('.add-folder').click(function () {
-        $('.folder-adder').show();
+    $('.addfolder').click(function () {
+      'use strict';
+       $('.folder-adder').show();
         return false;
     });
 
-    $('.added-folder').click(function () {
-        $('.folder-adder').hide();
-        return false;
+    $('.addedfolder').click(function () {
+      'use strict';
+      $('.folder-adder').hide();
+       return false;
     });
 });

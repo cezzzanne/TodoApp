@@ -33,28 +33,6 @@ h2 {
     text-align: center;
 }
 
-.folder-adder {
-    width: 360px;
-    height: 170px;
-    border-radius: 15px;
-    border: 1px solid black;
-    display:none;
-    background:white;
-    z-index:101;   /*must be greater than the opacity provider*/
-    position:fixed;
-    top: 30%;
-    left: 37%;/*centers the div*/
-}
-
-.blurring-provider {
-    display:none;
-    top:0;
-    left:0;
-    min-width:100%;
-    min-height:100%;/*these make the opacity provider fill the screen*/
-    opacity:0.4;
-    filter:alpha(opacity=60);
-    position:absolute;
-     background:black;
-  z-index:100;
+.fa {
+  margin-top: 10px;
 }

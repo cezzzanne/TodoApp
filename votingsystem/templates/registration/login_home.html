@@ -26,30 +26,27 @@
       <h2> {{ folder.name }} ({{ folder.todo.all.count }}) <a href=""class="addtodo">+</a> </h2>
   </div>
     {% endfor %}
-    <div class="col-sm-4 individual-folder adding-folder"> <!-- MAKE THIS GO SOMEWHERE-->
-    <a href="" class="add-folder"> <h2>Add a Folder</h2></a>
+
+  <div class="col-sm-4 individual-folder">
+    <a href="" class="addfolder"><h2>Add a Folder</h2></a>
     </div>
 </div>
-</div>
 
-
-
-<div class="container folder-adder">
-  <h2>Add a Folder</h2>
-<form method="post">
+<div class="col-sm-4 folder-adder individual-folder">
+<form class="fa"method="post">
   {% csrf_token %}
   {{ form.as_p }}
   <button class="added-folder" type="submit">Add</button>
 </form>
 </div>
 
-<div class="blurring-provider folder-adder">
+
 </div>
 
+
+
+
 {% endblock %}
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-{% block content %}
-{% load staticfiles %}
-<link type="text/javascript" href="{% static 'votingsystem/login_home.js' %}"></link>
+{% block jslinks %}
+<script type="text/javascript" src="{% static 'votingsystem/login_home.js' %}"></script>
 {% endblock %}
