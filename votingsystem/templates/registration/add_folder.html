@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}
+<title>Add A Folder</title>
+{% endblock %}
+
+
+{% block body %}
+<div class='container'>
+  <h2>Add a Folder</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Add</button>
+  </form>
+</div>
+  {% endblock %}
+
+{% block jslinks %}
+{% endblock %}

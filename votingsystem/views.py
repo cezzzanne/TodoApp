@@ -84,3 +84,18 @@ def add_todo(request, folder):
             return HttpResponseRedirect('/account/home')
     else:
         return render(request, 'registration/add_todo.html', {'form': add_todo_form})
+
+
+@login_required()
+def add_folder(request):
+    original_form = FolderForm
+    if request.method == 'POST':
+        form = FolderForm(request.POST)
+        if form.is_valid():
+            name = form.cleaned_data['name']
+            description = form.cleaned_data['description']
+            add = Folder(user=request.user.profile, name=name, description=description)
+            add.save()
+            return HttpResponseRedirect('/account/home')
+    else:
+        return render(request, 'registration/add_folder.html', {'form': original_form})

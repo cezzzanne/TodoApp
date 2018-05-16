@@ -23,7 +23,7 @@ post_save.connect(create_profile, sender=User)
 
 class Folder(models.Model):
     user = models.ForeignKey(Profile, on_delete=models.CASCADE, related_name='folder')
-    name = models.CharField(max_length=200, null=True, blank=True)
+    name = models.CharField(max_length=200, default="")
     description = models.CharField(max_length=300, null=True, blank=True)
 
     def __str__(self):
