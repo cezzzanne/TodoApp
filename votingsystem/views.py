@@ -18,6 +18,9 @@ def register(request):
 
 
 def home(request):
+    if request.user.is_authenticated:
+        return HttpResponseRedirect('/account/home')
+
     return render(request, 'home.html')
 
 

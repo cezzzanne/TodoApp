@@ -2,12 +2,42 @@
 
 {% block title %}
 <title>Welcome</title>
+{% load static %}
+<link rel="stylesheet" href="{% static 'votingsystem/home.css' %}" type="text/css">
 {% endblock %}
-{% block body %}
-<div class="container">
-    <h1>Welcome!</h1>
 
-</div>
+{% block body %}
+
+<div class="first-home">
+   <h2 class="title">Shrimp</h2>
+       <p class="title-words">Keep track</p>
+   </div>
+   <div class="left-side">
+       <h1 class="logo">Ś</h1>
+       <h2 class="left-title">Never Stop</h2>
+       <button class="signup-button">Sign Up</button>
+
+   <div class="login-show-left">
+       <p>Welcome</p>
+       </div>
+
+   <div class="signup-show-left">
+       <p>Join</p>
+       </div>
+   </div>
+   <div class="right-side">
+       <h2 class="right-title">Not Doing Things</h2>
+       <button class="login-button">Log In</button>
+
+   <div class="login-show-right">
+       <p>Back</p>
+       </div>
+   <div class="signup-show-right">
+       <p>Us</p>
+   </div>
+   </div>
 {% endblock %}
 {% block jslinks %}
+<script type="text/javascript" src="{% static 'votingsystem/home.js' %}"></script>
+
 {% endblock %}
