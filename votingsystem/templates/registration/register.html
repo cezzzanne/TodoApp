@@ -2,19 +2,26 @@
 
 {% block title %}
 <title>Shrimp</title>
+{% load static %}
+<link rel="stylesheet" href="{% static 'votingsystem/register.css' %}" type="text/css">
 {% endblock %}
 
 {% block body %}
-<h1> Register</h1>
-<form action='' method="post">
+<div class="background-c">
+<h1 class="title"> Register</h1>
+<form class="register-form" action='' method="post">
     {% csrf_token %}
     <table>
         {{ form.as_table }}
     </table>
-    <p><input type="submit">Register</p>
+    <p><input class="submit-button" type="submit"></p>
 </form>
+</div>
 {% endblock %}
 
 
 {% block jslinks %}
+
+<script type="text/javascript" src="{% static 'votingsystem/register-jquery.js' %}"></script>
+
 {% endblock %}

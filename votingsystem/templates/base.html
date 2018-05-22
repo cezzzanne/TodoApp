@@ -15,6 +15,7 @@
 
 </head>
 <body>
+  {% if user.is_authenticated %}
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -25,21 +26,13 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        {% if user.is_authenticated %}
         <a class="navbar-brand" href="/account/home">Shrimp</a>
-        {% else %}
-        <a class="navbar-brand" href="/">Shrimp</a>
-        {% endif %}
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          {% if user.is_authenticated %}
           <p class="navbar-text">Hi! {{ user.first_name }}</p>
-          {% else %}
-          <p class="navbar-text">Welcome to Shrimp, the modern day todo list</p>
-          {% endif %}
         </ul>
           <!--<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
           <li><a href="#">Link</a></li>
@@ -62,7 +55,6 @@
           </div>
           <button type="submit" class="btn btn-default">Submit</button>
         </form>-->
-        {% if user.is_authenticated %}
         <ul class="nav navbar-nav navbar-right">
           <!--<li><a href="#">Link</a></li>-->
           <li class="dropdown navbar-right">
@@ -76,35 +68,22 @@
             </ul>
           </li>
         </ul>
-        {% else %}
-        <ul class="nav navbar-nav navbar-right">
-          <!--<li><a href="#">Link</a></li>-->
-          <li class="dropdown navbar-right">
-            <a href='' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Log In or Sign Up <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="/login">Login</a></li>
-              <li><a href="/register">Sign Up</a></li>
-              <!--<li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>-->
-            </ul>
-          </li>
-        </ul>
-        {% endif %}
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
 
+{% endif %}
 {% block body %}
 
 {% endblock %}
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+{% block jslinks %}
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    {% block jslinks %}
-
-    {% endblock %}
+{% endblock %}
 </body>
 </html>

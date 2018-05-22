@@ -7,11 +7,11 @@ from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 
 class CreateProfileForm(UserCreationForm):
 
-
     class Meta:
         model = User
         fields = ('username', 'first_name', 'last_name',
                   'password1', 'password2')
+        help_texts = {'username': None, 'password1': None, 'password2': None}
 
     def save(self, commit=True):
         user = super(CreateProfileForm, self).save(commit=False)

@@ -1,8 +1,5 @@
-/*jslint browser: true*/
-/*global $, jQuery, alert*/
 $(document).ready(function () {
     'use strict';
-    $('.first_home').hide();
     $('.login-show-left').hide();
     $('.login-show-right').hide();
     $('.signup-show-left').hide();
