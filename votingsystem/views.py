@@ -70,7 +70,7 @@ def edit_password(request):
 @login_required()
 def logout_view(request):
     logout(request)
-    return render(request, 'home.html')
+    return HttpResponseRedirect('/')
 
 
 @login_required()
