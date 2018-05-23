@@ -34,3 +34,6 @@ class ToDo(models.Model):
     folder = models.ForeignKey(Folder, on_delete=models.CASCADE, related_name='todo', default='')
     name = models.CharField(max_length=100)
     note = models.CharField(max_length=700)
+
+    def __str__(self):
+        return self.name

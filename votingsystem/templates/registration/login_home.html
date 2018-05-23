@@ -12,7 +12,7 @@
   <form method="post">
       <div id="search" class="row">
       <input class="col-sm" id="search-bar" type="text" placeholder="Search for Folders">
-    <button type="submit">Search</button>
+    <button class="btn btn-primary" type="submit">Search</button>
       </div>
   </form>
 </div>
@@ -21,9 +21,10 @@
 
 <div id="all-folders" class="container-fluid">
   <div class="row">
-    {% for folder in folders %}
+    {% for folder in user.profile.folder.all %}
     <div class="col-sm-4 individual-folder">
-      <h2> {{ folder.name }} ({{ folder.todo.all.count }}) <a href="add-todo/{{ folder }}"class="addtodo">+</a> </h2>
+      <h2> {{ folder.name }} ({{ folder.todo.all.count }}) <a href="add-todo/{{ folder.id }}"class="addtodo"><span class="glyphicon glyphicon-zoom-in"></span></a></h2>
+      <p style="text-align:center"class="folder-description"> <i>Description: {{ folder.description }}</i></p>
   </div>
     {% endfor %}
 
@@ -35,5 +36,4 @@
 {% endblock %}
 
 {% block jslinks %}
-<script src="{% static 'votingsystem/login_home.js' %}"></script>
 {% endblock %}

@@ -1,0 +1,22 @@
+.individual-todo {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 20px;
+  height: 50px;
+}
+
+.add-todo {
+  width: 100%;
+}
+
+.eliminate-todo {
+  padding-top: 12px;
+}
+
+.todo-info {
+  padding-top: 12px;
+}
+
+.add-button {
+  display: inline;
+}
